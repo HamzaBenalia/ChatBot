@@ -60,8 +60,13 @@ python rest.py
 ```
 
 # Tester le bot
-Une fois que le bot est en cours d'exécution, vous pouvez envoyer des messages au bot dans Discord pour tester ses réponses. Le message sera traité par Rasa et le bot répondra en fonction des intentions détectées.
+Une fois que le bot est en cours d'exécution, vous pouvez envoyer des messages au bot dans Discord pour tester ses réponses. Le message sera traité par Rasa et le bot répondra en fonction des 
+intentions détectées.
 
+
+# Photos
+![Description de l'image](https://github.com/HamzaBenalia/ChatBot/blob/master/Images/Discord.png)
+![Description de l'image](https://github.com/HamzaBenalia/ChatBot/blob/master/Images/console.png)
 
 # Remarque 
 Il faut avoir un serveur et un token Discord au préalable pour pouvoir le connecter à Rasa. Il existe de nombreux tutoriels en ligne pour vous guider dans cette étape.
