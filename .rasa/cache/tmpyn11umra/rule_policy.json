@@ -1,0 +1,28 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_nombre_personnes\"}}]": "utter_demander_nombre_personnes",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_nombre_personnes\"}}, {\"prev_action\": {\"action_name\": \"utter_demander_nombre_personnes\"}, \"slots\": {\"nombre_personnes\": [1.0]}, \"user\": {\"intent\": \"demander_nombre_personnes\"}}]": "utter_demander_nom",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_nombre_personnes\"}}, {\"prev_action\": {\"action_name\": \"utter_demander_nombre_personnes\"}, \"slots\": {\"nombre_personnes\": [1.0]}, \"user\": {\"intent\": \"demander_nombre_personnes\"}}, {\"prev_action\": {\"action_name\": \"utter_demander_nom\"}, \"slots\": {\"nom\": [1.0], \"nombre_personnes\": [1.0]}, \"user\": {\"intent\": \"demander_nombre_personnes\"}}]": "utter_demander_numero_de_telephone",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_nombre_personnes\"}}, {\"prev_action\": {\"action_name\": \"utter_demander_nombre_personnes\"}, \"slots\": {\"nombre_personnes\": [1.0]}, \"user\": {\"intent\": \"demander_nombre_personnes\"}}, {\"prev_action\": {\"action_name\": \"utter_demander_nom\"}, \"slots\": {\"nom\": [1.0], \"nombre_personnes\": [1.0]}, \"user\": {\"intent\": \"demander_nombre_personnes\"}}, {\"prev_action\": {\"action_name\": \"utter_demander_numero_de_telephone\"}, \"slots\": {\"nom\": [1.0], \"nombre_personnes\": [1.0], \"numero_de_telephone\": [1.0]}, \"user\": {\"intent\": \"demander_nombre_personnes\"}}]": "utter_fournir_numero_de_telephone",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_nombre_personnes\"}}, {\"prev_action\": {\"action_name\": \"utter_demander_nombre_personnes\"}, \"slots\": {\"nombre_personnes\": [1.0]}, \"user\": {\"intent\": \"demander_nombre_personnes\"}}, {\"prev_action\": {\"action_name\": \"utter_demander_nom\"}, \"slots\": {\"nom\": [1.0], \"nombre_personnes\": [1.0]}, \"user\": {\"intent\": \"demander_nombre_personnes\"}}, {\"prev_action\": {\"action_name\": \"utter_demander_numero_de_telephone\"}, \"slots\": {\"nom\": [1.0], \"nombre_personnes\": [1.0], \"numero_de_telephone\": [1.0]}, \"user\": {\"intent\": \"demander_nombre_personnes\"}}, {\"prev_action\": {\"action_name\": \"utter_fournir_numero_de_telephone\"}, \"slots\": {\"nom\": [1.0], \"nombre_personnes\": [1.0], \"numero_de_telephone\": [1.0]}, \"user\": {\"intent\": \"demander_nombre_personnes\"}}]": "action_listen"
+    },
+    "rule_only_slots": [
+      "nombre_personnes",
+      "numero_de_telephone",
+      "nom"
+    ],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_nombre_personnes\"}}, {\"prev_action\": {\"action_name\": \"utter_demander_nombre_personnes\"}, \"slots\": {\"nombre_personnes\": [1.0]}, \"user\": {\"intent\": \"demander_nombre_personnes\"}}]",
+      "predicting default action with intent back",
+      "predicting default action with intent session_start",
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_nombre_personnes\"}}, {\"prev_action\": {\"action_name\": \"utter_demander_nombre_personnes\"}, \"slots\": {\"nombre_personnes\": [1.0]}, \"user\": {\"intent\": \"demander_nombre_personnes\"}}, {\"prev_action\": {\"action_name\": \"utter_demander_nom\"}, \"slots\": {\"nom\": [1.0], \"nombre_personnes\": [1.0]}, \"user\": {\"intent\": \"demander_nombre_personnes\"}}, {\"prev_action\": {\"action_name\": \"utter_demander_numero_de_telephone\"}, \"slots\": {\"nom\": [1.0], \"nombre_personnes\": [1.0], \"numero_de_telephone\": [1.0]}, \"user\": {\"intent\": \"demander_nombre_personnes\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_nombre_personnes\"}}, {\"prev_action\": {\"action_name\": \"utter_demander_nombre_personnes\"}, \"slots\": {\"nombre_personnes\": [1.0]}, \"user\": {\"intent\": \"demander_nombre_personnes\"}}, {\"prev_action\": {\"action_name\": \"utter_demander_nom\"}, \"slots\": {\"nom\": [1.0], \"nombre_personnes\": [1.0]}, \"user\": {\"intent\": \"demander_nombre_personnes\"}}, {\"prev_action\": {\"action_name\": \"utter_demander_numero_de_telephone\"}, \"slots\": {\"nom\": [1.0], \"nombre_personnes\": [1.0], \"numero_de_telephone\": [1.0]}, \"user\": {\"intent\": \"demander_nombre_personnes\"}}, {\"prev_action\": {\"action_name\": \"utter_fournir_numero_de_telephone\"}, \"slots\": {\"nom\": [1.0], \"nombre_personnes\": [1.0], \"numero_de_telephone\": [1.0]}, \"user\": {\"intent\": \"demander_nombre_personnes\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_nombre_personnes\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_nombre_personnes\"}}, {\"prev_action\": {\"action_name\": \"utter_demander_nombre_personnes\"}, \"slots\": {\"nombre_personnes\": [1.0]}, \"user\": {\"intent\": \"demander_nombre_personnes\"}}, {\"prev_action\": {\"action_name\": \"utter_demander_nom\"}, \"slots\": {\"nom\": [1.0], \"nombre_personnes\": [1.0]}, \"user\": {\"intent\": \"demander_nombre_personnes\"}}]"
+    ]
+  }
+}

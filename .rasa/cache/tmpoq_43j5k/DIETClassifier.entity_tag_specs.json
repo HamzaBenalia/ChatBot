@@ -1,0 +1,36 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-nom",
+      "2": "I-nom",
+      "3": "L-nom",
+      "4": "U-nom",
+      "5": "B-nombre_de_personnes",
+      "6": "I-nombre_de_personnes",
+      "7": "L-nombre_de_personnes",
+      "8": "U-nombre_de_personnes",
+      "9": "B-numero_de_telephone",
+      "10": "I-numero_de_telephone",
+      "11": "L-numero_de_telephone",
+      "12": "U-numero_de_telephone",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-nom": 1,
+      "I-nom": 2,
+      "L-nom": 3,
+      "U-nom": 4,
+      "B-nombre_de_personnes": 5,
+      "I-nombre_de_personnes": 6,
+      "L-nombre_de_personnes": 7,
+      "U-nombre_de_personnes": 8,
+      "B-numero_de_telephone": 9,
+      "I-numero_de_telephone": 10,
+      "L-numero_de_telephone": 11,
+      "U-numero_de_telephone": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  }
+]

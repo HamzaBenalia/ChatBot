@@ -1,0 +1,112 @@
+version: "3.1"
+
+intents:
+  - greet
+  - request_reservation
+  - provide_date
+  - provide_people_number
+  - provide_name
+  - provide_phone_number
+  - provide_reservation_code
+  - provide_cancel_code  # Ajout de cet intent
+  - provide_info_code
+  - cancel_reservation
+  - request_reservation_info
+  - ask_menu
+  - ask_allergens
+  - affirm
+  - deny
+
+entities:
+  - date
+  - number_of_people
+  - name
+  - phone_number
+  - reservation_code
+  - cancel_code  # Ajout de cet entity
+  - info_code
+
+slots:
+  date:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: date
+
+  number_of_people:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: number_of_people
+
+  name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: name
+
+  phone_number:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: phone_number
+
+  reservation_code:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: reservation_code
+
+  cancel_code:  # Ajout de ce slot
+    type: text
+    mappings:
+      - type: from_entity
+        entity: cancel_code
+
+  info_code:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: info_code
+
+responses:
+  utter_greet:
+    - text: "Bonjour, que puis-je faire pour vous ?"
+
+  utter_ask_reservation_date:
+    - text: "Pour quelle date souhaitez-vous réserver ?"
+
+  utter_ask_number_of_people:
+    - text: "Combien de personnes seront présentes ?"
+
+  utter_ask_name:
+    - text: "Quel est votre nom pour la réservation ?"
+
+  utter_ask_phone_number:
+    - text: "Quel est votre numéro de téléphone ?"
+
+  utter_ask_reservation_code:
+    - text: "Pouvez-vous me donner le code de réservation ?"
+
+  utter_reservation_confirmed:
+    - text: "Votre réservation pour {number_of_people} personnes le {date} au nom de {name} a été confirmée."
+
+  utter_reservation_cancelled:
+    - text: "Votre réservation a été annulée avec succès."
+
+  utter_reservation_info:
+    - text: "Voici les informations sur votre réservation avec le code {info_code}."
+
+  utter_menu_of_the_day:
+    - text: "Le menu du jour est : [menu ici]"
+
+  utter_allergens_info:
+    - text: "Voici la liste des allergènes : [allergènes ici]"
+
+  utter_goodbye:
+    - text: "Au revoir et à bientôt !"
+
+actions:
+  - action_confirm_reservation
+  - action_cancel_reservation
+  - action_reservation_info

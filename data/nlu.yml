@@ -1,0 +1,83 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - bonjour
+    - salut
+    - coucou
+
+- intent: request_reservation
+  examples: |
+    - je veux réserver une table
+    - j'aimerais réserver pour ce soir
+    - je veux une réservation
+
+- intent: provide_date
+  examples: |
+    - pour le [12 janvier](date)
+    - à partir du [15 février](date)
+    - du [20 au 22 mars](date)
+
+- intent: provide_people_number
+  examples: |
+    - nous serons [4](number_of_people)
+    - réservation pour [2 personnes](number_of_people)
+    - il y aura [3 personnes](number_of_people)
+
+- intent: provide_name
+  examples: |
+    - Mon nom est [Martin](name)
+    - Réservation au nom de [Dupont](name)
+    - C'est [Jean](name)
+
+- intent: provide_phone_number
+  examples: |
+    - Mon numéro est [0601020304](phone_number)
+    - Voici mon numéro : [0708091011](phone_number)
+    - Vous pouvez me joindre au [0602030405](phone_number)
+
+- intent: provide_cancel_code
+  examples: |
+    - Mon code de réservation est [ABC123](cancel_code)
+    - Voici le code pour annuler : [DEF456](cancel_code)
+    - Le code pour l'annulation est [XYZ789](cancel_code)
+
+- intent: provide_info_code
+  examples: |
+    - Mon code de réservation est [ABC123](info_code)
+    - Voici le code pour obtenir les infos : [DEF456](info_code)
+    - Le numéro de réservation est [XYZ789](info_code)
+
+- intent: cancel_reservation
+  examples: |
+    - J'aimerais annuler ma réservation
+    - Annulez ma réservation avec le code [ABC123](cancel_code)
+    - Je souhaite annuler la réservation
+
+- intent: request_reservation_info
+  examples: |
+    - Peux-tu me donner les informations de ma réservation avec le code [XYZ789](info_code)
+    - J'aimerais obtenir des informations sur ma réservation
+    - Détails de ma réservation avec le code [DEF456](info_code)
+
+- intent: ask_menu
+  examples: |
+    - Quel est le menu du jour ?
+    - Montre-moi le menu du jour
+    - Que proposez-vous aujourd'hui ?
+
+- intent: ask_allergens
+  examples: |
+    - Y a-t-il des allergènes dans le menu ?
+    - Quels sont les allergènes ?
+    - Y a-t-il des plats sans allergènes ?
+
+
+- intent: affirm
+  examples: |
+    - oui
+    - d'accord
+    - bien sûr
+    - tout à fait
+    - c'est ça

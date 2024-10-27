@@ -1,0 +1,8 @@
+{
+  "rule_only_slots": [
+    "nombre_personnes",
+    "numero_de_telephone",
+    "nom"
+  ],
+  "rule_only_loops": []
+}

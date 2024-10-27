@@ -1,0 +1,34 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"provide_name\"}}]": "utter_ask_phone_number",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"provide_name\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_phone_number\"}, \"user\": {\"intent\": \"provide_name\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"provide_people_number\"}}]": "utter_ask_name",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"provide_people_number\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_name\"}, \"user\": {\"intent\": \"provide_people_number\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"provide_phone_number\"}}]": "action_confirm_reservation",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"provide_phone_number\"}}, {\"prev_action\": {\"action_name\": \"action_confirm_reservation\"}, \"user\": {\"intent\": \"provide_phone_number\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"provide_date\"}}]": "utter_ask_number_of_people",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"provide_date\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_number_of_people\"}, \"user\": {\"intent\": \"provide_date\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"affirm\"}}]": "utter_reservation_confirmed",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"affirm\"}}, {\"prev_action\": {\"action_name\": \"utter_reservation_confirmed\"}, \"user\": {\"intent\": \"affirm\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_menu\"}}]": "utter_menu_of_the_day",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_menu\"}}, {\"prev_action\": {\"action_name\": \"utter_menu_of_the_day\"}, \"user\": {\"intent\": \"ask_menu\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"request_reservation\"}}]": "utter_ask_reservation_date",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"request_reservation\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_reservation_date\"}, \"user\": {\"intent\": \"request_reservation\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"cancel_reservation\"}}]": "action_cancel_reservation",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"cancel_reservation\"}}, {\"prev_action\": {\"action_name\": \"action_cancel_reservation\"}, \"user\": {\"intent\": \"cancel_reservation\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_menu\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_menu\"}}, {\"prev_action\": {\"action_name\": \"utter_menu_of_the_day\"}, \"user\": {\"intent\": \"ask_menu\"}}]",
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"cancel_reservation\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"cancel_reservation\"}}, {\"prev_action\": {\"action_name\": \"action_cancel_reservation\"}, \"user\": {\"intent\": \"cancel_reservation\"}}]",
+      "predicting default action with intent session_start"
+    ]
+  }
+}
